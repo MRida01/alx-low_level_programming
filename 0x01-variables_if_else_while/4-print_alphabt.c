@@ -10,7 +10,7 @@ char n;
 
 for (n = 'a'; n <= 'z'; n++)
 {
-if (n != q && n != e)
+if (n != 'q' && n != 'e')
 {
 	putchar(n);
 }
