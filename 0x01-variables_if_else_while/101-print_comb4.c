@@ -31,6 +31,7 @@ if (m != n || m != o || n != o)
 }
 }
 }
+}
 putchar('\n');
 return (0);
 }
