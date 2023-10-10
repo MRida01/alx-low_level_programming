@@ -27,7 +27,7 @@ putchar(m);
 putchar(32);
 putchar(o);
 putchar(p);
-if (n != 57 && m != 56)
+if (n != 57 || m != 56)
 {
 	putchar(44);
 	putchar(32);
