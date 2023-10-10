@@ -23,10 +23,10 @@ for (n = 48; n <= 57; n++)
 s = n;
 for (m = 48; m <= 57; m++)
 {
-r = m;
+r = m + 1;
 for (o = s; o <= 57; o++)
 {
-for (p = r + 1; p <= 57; p++)
+for (p = r; p <= 57; p++)
 {
 putchar(n);
 putchar(m);
