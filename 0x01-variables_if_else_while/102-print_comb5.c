@@ -18,9 +18,9 @@ for (n = 48; n <= 57; n++)
 {
 for (m = 48; m <= 57; m++)
 {
-for (o = n; o <= 57; n++)
+for (o = n; o <= 57; o++)
 {
-for (p = m+1; p <= 57; m++)
+for (p = m + 1; p <= 57; p++)
 {
 putchar(n);
 putchar(m);
