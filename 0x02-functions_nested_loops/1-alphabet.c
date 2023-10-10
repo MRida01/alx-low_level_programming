@@ -1,12 +1,16 @@
-#include "main.h"
-
+#include <stdio.h>
 /**
- * main - check the code
+ * print_alphabet - writes out the alphabet fron a to z
  *
- * Return: Always 0.
+ * Return: 0
  */
-int main(void)
+void print_alphabet(void)
 {
-    print_alphabet();
-    return (0);
+char n;
+
+for (n = 'a'; n <= 'z'; n++)
+{
+printf("%c", n);
+}
+printf("\n");
 }
