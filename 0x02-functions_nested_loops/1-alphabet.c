@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 /**
  * print_alphabet - writes out the alphabet fron a to z
  *
@@ -6,11 +6,11 @@
  */
 void print_alphabet(void)
 {
-char n;
+int n;
 
-for (n = 'a'; n <= 'z'; n++)
+for (n = 97; n <= 122; n++)
 {
-printf("%c", n);
+_putchar(n);
 }
-printf("\n");
+_putchar(10);
 }
