@@ -16,12 +16,15 @@ int p;
 
 int r;
 
+int s;
+
 for (n = 48; n <= 57; n++)
 {
+s = n;
 for (m = 48; m <= 57; m++)
 {
 r = m;
-for (o = n; o <= 57; o++)
+for (o = s; o <= 57; o++)
 {
 for (p = r + 1; p <= 57; p++)
 {
@@ -38,6 +41,7 @@ if (n != 57 || m != 56)
 }
 r = 48;
 }
+s = 48;
 }
 }
 putchar('\n');
