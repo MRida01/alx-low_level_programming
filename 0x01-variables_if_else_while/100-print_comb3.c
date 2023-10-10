@@ -12,7 +12,7 @@ int m;
 
 for (n = 48; n <= 56; n++)
 {
-for (m = n; ,m <= 57; n++)
+for (m = n; m <= 57; m++)
 {
 if (m != n)
 {
