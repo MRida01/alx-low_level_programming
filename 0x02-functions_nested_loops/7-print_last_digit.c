@@ -12,7 +12,7 @@ int m;
 m = _ % 10;
 if (m < 0)
 {
-        m = -m;
+	m = -m;
 }
 m = m + 48;
 _putchar(m);
