@@ -26,7 +26,7 @@ printf("%d", n);
 }
 if (n != 100)
 {
-printf("\n");
+printf(" ");
 }
 }
 }
