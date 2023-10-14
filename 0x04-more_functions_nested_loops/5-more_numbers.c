@@ -8,6 +8,10 @@ int n;
 
 int m;
 
+int l;
+
+for (l = 0; l < 10; l++)
+{
 for (m = 0; m <= 1; m++)
 {
 for (n = 48; n <= 57; n++)
@@ -24,4 +28,5 @@ n = 99;
 }
 }
 _putchar(10);
+}
 }
