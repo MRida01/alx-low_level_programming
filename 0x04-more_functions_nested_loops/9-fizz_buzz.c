@@ -1,8 +1,10 @@
 #include <stdio.h>
 /**
  * main - FizzBuzz challenge
+ *
+ * Return: 0
  */
-void main(void)
+int main(void)
 {
 int n;
 
@@ -29,4 +31,5 @@ if (n != 100)
 printf(" ");
 }
 }
+return (0);
 }
