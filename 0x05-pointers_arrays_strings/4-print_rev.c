@@ -12,7 +12,8 @@ while (*n != '\0')
 {
 n++;
 }
-while (n > s)
+n--;
+while (n >= s)
 {
 write(1, n, 1);
 n--;
