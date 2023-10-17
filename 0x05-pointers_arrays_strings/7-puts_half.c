@@ -1,12 +1,12 @@
 #include <unistd.h>
 #include "main.h"
 /**
- * print_rev - writes a string in reverse
- * @s: string to be printed
+ * puts_half - writes later half of a string
+ * @str: string to be printed
  */
-void print_rev(char *s)
+void puts_half(char *str)
 {
-char *n = s;
+char *n = str;
 
 int m;
 
@@ -26,10 +26,10 @@ while (m > 0)
 s++;
 m--;
 }
-while (*s != '\0')
+while (*str != '\0')
 {
-write(1, s, 1);
-s++;
+write(1, str, 1);
+str++;
 }
 write(1, "\n", 1);
 }
