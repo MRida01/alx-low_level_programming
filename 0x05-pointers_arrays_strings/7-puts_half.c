@@ -23,7 +23,7 @@ m--;
 m = m / 2;
 while (m > 0)
 {
-s++;
+str++;
 m--;
 }
 while (*str != '\0')
