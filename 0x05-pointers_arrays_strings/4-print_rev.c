@@ -6,9 +6,8 @@
  */
 void print_rev(char *s)
 {
-char *n;
+char *n = s;
 
-*n = s;
 while (*n != '\0')
 {
 n++;
