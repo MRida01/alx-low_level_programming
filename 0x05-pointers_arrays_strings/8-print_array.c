@@ -17,5 +17,5 @@ printf(", ");
 }
 printf("%d", a[m]);
 }
-printf ("\n");
+printf("\n");
 }
