@@ -13,8 +13,9 @@ for (m = 0; m < n ; m++)
 {
 if (m != 0)
 {
-printf (", ");
+printf(", ");
 }
 printf("%d", a[m]);
 }
+printf ("\n");
 }
