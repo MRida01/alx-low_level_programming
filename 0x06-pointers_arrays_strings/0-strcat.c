@@ -19,5 +19,7 @@ dest++;
 src++;
 }
 *dest = '\0';
-return (dest);
+char n = *dest;
+
+return (n);
 }
