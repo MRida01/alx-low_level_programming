@@ -1,4 +1,4 @@
-#imclude "main.h"
+#include "main.h"
 /**
  * string_toupper - turns lowercase letters into uppercase
  * @s: string to capitalise
