@@ -8,13 +8,13 @@
  */
 int _strcmp(char *s1, char *s2)
 {
+int l;
+
 while (*s1 != '\0' && *s2 != '\0' && *s1 == *s2)
 {
 s1++;
 s2++;
 }
-int l;
-
 l = *s1 - *s2;
 return (l);
 }
