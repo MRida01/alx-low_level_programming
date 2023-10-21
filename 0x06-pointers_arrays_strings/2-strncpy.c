@@ -24,6 +24,5 @@ while (n > l) {
 dest++;
 l++;
 }
-*dest = '\0';
 return (m);
 }
