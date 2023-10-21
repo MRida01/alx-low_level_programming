@@ -13,13 +13,15 @@ char *m = dest;
 
 int l = 0;
 
-while (*src != '\0' && n > l) {
+while (*src != '\0' && n > l)
+{
 *dest = *src;
 dest++;
 src++;
 l++;
 }
-while (n > l) {
+while (n > l)
+{
 *dest = '\0';
 dest++;
 l++;
