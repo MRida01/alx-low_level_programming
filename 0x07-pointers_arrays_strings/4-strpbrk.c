@@ -13,15 +13,17 @@ int exit = 0;
 
 while (exit == 0)
 {
-while (*accept != '\0')
+char *c = accept;
+
+while (*c != '\0')
 {
-if (*s == *accept)
+if (*s == *c)
 {
 char *m = s;
 
 return (m);
 }
-accept++;
+c++;
 }
 if (*s == '\0')
 {
