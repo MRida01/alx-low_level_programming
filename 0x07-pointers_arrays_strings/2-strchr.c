@@ -9,7 +9,9 @@
  */
 char *_strchr(char *s, char c)
 {
-while (*s != '\0')
+int exit = 0;
+
+while (exit == 0)
 {
 if (*s == c)
 {
@@ -17,7 +19,14 @@ char *m = s;
 
 return (m);
 }
+if (*s == '\0')
+{
+exit = 1;
+}
+else
+{
 s++;
+}
 }
 return (NULL);
 }
