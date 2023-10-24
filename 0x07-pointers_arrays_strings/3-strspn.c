@@ -1,4 +1,3 @@
-#include <stddef.h>
 #include "main.h"
 /**
  * _strspn - searches a string for characters and counts them
