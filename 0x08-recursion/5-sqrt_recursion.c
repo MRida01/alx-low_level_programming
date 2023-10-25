@@ -11,7 +11,7 @@ int realsqrt(int n, int m, int l)
 {
 int i = m + (l - m) / 2;
 
-long long j = (long long)i * i;
+long j = (long)i * i;
     
 if (j == n)
 {
@@ -27,7 +27,7 @@ return realsqrt(n, m, i - 1);
 }
 else
 {
-return realsqrt(x, i + 1, l);
+return realsqrt(n, i + 1, l);
 }
 }
 /**
