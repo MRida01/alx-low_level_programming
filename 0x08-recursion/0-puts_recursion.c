@@ -6,10 +6,13 @@
  */
 void _puts_recursion(char *s)
 {
-while (*s != '\0')
+if (*s != '\0')
 {
 write(1, s, 1);
-s++;
+ _puts_recursion(s + 1);
 }
+else
+{
 write(1, "\n", 1);
+}
 }
