@@ -19,7 +19,7 @@ return i;
 }
 else if (j < n && (i + 1) * (i + 1) > n)
 {
-return (-1)
+return (-1);
 }
 else if (j > n)
 {
