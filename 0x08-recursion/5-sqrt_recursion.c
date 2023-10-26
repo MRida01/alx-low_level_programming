@@ -5,17 +5,17 @@
  * @m: minimum possible value
  * @l: maximum possible value
  *
- * Retrun: square root or -1
+ * Return: square root or -1
  */
 int realsqrt(int n, int m, int l)
 {
 int i = m + (l - m) / 2;
 
 long j = (long)i * i;
-    
+
 if (j == n)
 {
-return i;
+return (i);
 }
 else if (j < n && (i + 1) * (i + 1) > n)
 {
@@ -23,11 +23,11 @@ return (-1);
 }
 else if (j > n)
 {
-return realsqrt(n, m, i - 1);
+return (realsqrt(n, m, i - 1));
 }
 else
 {
-return realsqrt(n, i + 1, l);
+return (realsqrt(n, i + 1, l));
 }
 }
 /**
@@ -46,5 +46,5 @@ else if (n <= 1)
 {
 return (n);
 }
-return realsqrt(n, 0, n);
+return (realsqrt(n, 0, n));
 }
