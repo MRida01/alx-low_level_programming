@@ -13,7 +13,7 @@ int n;
 
 if (s == NULL)
 {
-return (NULL);
+return (0);
 }
 n = 0;
 while (s[n] != '\0')
