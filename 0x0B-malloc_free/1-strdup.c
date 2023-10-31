@@ -24,7 +24,7 @@ return (n);
  *
  * Return: pointer to array or NULL if error
  */
-char *_strdup(char *str);
+char *_strdup(char *str)
 {
 int i;
 
