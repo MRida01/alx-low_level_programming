@@ -11,6 +11,10 @@ int _strlen(char *s)
 {
 int n;
 
+if (s == NULL)
+{
+return (NULL);
+}
 n = 0;
 while (s[n] != '\0')
 {
@@ -30,16 +34,18 @@ int i;
 
 char *array;
 
+int size = _strlen(str);
+
 if (str == NULL)
 {
 return (NULL);
 }
-array = malloc(sizeof(char) * (_strlen(str) + 1));
+array = malloc(sizeof(char) * (size + 1));
 if (array == NULL)
 {
 return (NULL);
 }
-for (i = 0; i < _strlen(str); i++)
+for (i = 0; i < size; i++)
 {
 array[i] = *str;
 str++;
