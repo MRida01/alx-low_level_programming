@@ -44,6 +44,7 @@ return (NULL);
 for (i = 0; i < size; i++)
 {
 array[i] = *str;
+*str++;
 }
 return (array);
 }
