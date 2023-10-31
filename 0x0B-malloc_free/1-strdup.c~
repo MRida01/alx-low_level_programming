@@ -1,0 +1,33 @@
+#include <stdlib.h>
+#include <stddef.h>
+#include "main.h"
+/**
+ * create_array - creates an array of the specified size
+ * @size: size of the array
+ * @c: innitialising character
+ *
+ * Return: pointer to array or NULL if size is 0
+ */
+char *_strdup(char *str);
+{
+int i;
+
+char *array;
+
+int size;
+
+if (size <= 0)
+{
+return (NULL);
+}
+array = malloc(sizeof(char) * size);
+if (array == NULL)
+{
+return (NULL);
+}
+for (i = 0; i < size; i++)
+{
+array[i] = *str;
+}
+return (array);
+}
