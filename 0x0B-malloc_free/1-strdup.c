@@ -32,6 +32,10 @@ char *array;
 
 int size = _strlen(str);
 
+if (*str == NULL)
+{
+return (NULL);
+}
 array = malloc(sizeof(char) * (size + 1));
 if (array == NULL)
 {
