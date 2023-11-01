@@ -14,13 +14,17 @@ int i;
 
 int j;
 
-int *array;
+int** array;
 
 if (width <= 0 || height <= 0)
 {
 return (NULL);
 }
-array = malloc(sizeof(int) * (width * height));
+array = malloc(sizeof(int) * width);
+for (i = 0; i < width; i++)
+{
+array [i] = malloc(height * sizeof(int));
+}
 for (i = 0; i < width; i++)
 {
 for (j = 0; j < height; j++)
