@@ -20,10 +20,10 @@ if (width <= 0 || height <= 0)
 {
 return (NULL);
 }
-array = (int**)malloc(sizeof(int) * width);
+array = (int **)malloc(sizeof(int) * (width + 1));
 for (i = 0; i < width; i++)
 {
-array [i] = (int*)malloc(height * sizeof(int));
+array [i] = (int *)malloc((height + 1) * sizeof(int));
 }
 for (i = 0; i < width; i++)
 {
