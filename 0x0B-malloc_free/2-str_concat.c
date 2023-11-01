@@ -37,21 +37,22 @@ int j = 0;
 
 char *array;
 
-int size = _strlen(s1);
+int size1 = _strlen(s1);
 
-array = malloc(sizeof(char) * (size + 1));
+int size2 = _strlen(s2);
+
+array = malloc(sizeof(char) * (size1 + size2 + 1));
 if (array == NULL)
 {
 return (NULL);
 }
-for (i = 0; i < size; i++)
+for (i = 0; i < size1; i++)
 {
 array[i] = *s1;
 s1++;
 j++;
 }
-size = _strlen(s2);
-for (i = 0; i < size; i++)
+for (i = 0; i < size2; i++)
 {
 array[i + j] = *s2;
 s2++;
