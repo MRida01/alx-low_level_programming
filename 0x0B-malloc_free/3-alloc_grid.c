@@ -25,9 +25,9 @@ for (i = 0; i < width; i++)
 {
 array [i] = (int *)malloc((height + 1) * sizeof(int));
 }
-for (i = 0; i < width; i++)
+for (i = 0; i < height; i++)
 {
-for (j = 0; j < height; j++)
+for (j = 0; j < width; j++)
 {
 array [i][j] = 0;
 }
