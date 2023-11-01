@@ -14,7 +14,7 @@ int i;
 
 int j;
 
-char *array;
+int *array;
 
 if (width <= 0 || height <= 0)
 {
