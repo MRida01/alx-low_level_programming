@@ -1,4 +1,6 @@
 #include <unistd.h>
+#include <stdio.h>
+#include <string.h>
 /**
  * main - prints number of arguments
  * @argc: argument count
@@ -8,16 +10,18 @@
  */
 int main(int argc, char *argv[])
 {
-char n = '\n';
+int count = 0;
 
-char *str = argv[0];
+char countStr[20];
 
-char s = argc + 48;
+int length;
 
-if (argc > 0)
+(void)argc;
+while (argv[count] != NULL)
 {
-write(1, s, 1);
-write(1, &n, 1);
+count++;
 }
+length = snprintf(countStr, sizeof(countStr), "%d", count);
+write(1, countStr, length);
 return (0);
 }
