@@ -10,17 +10,13 @@
  */
 int main(int argc, char *argv[])
 {
-int count = 0;
+int count = argc - 1;
 
 char countStr[20];
 
 int length;
 
-(void)argc;
-while (argv[count] != NULL)
-{
-count++;
-}
+(void)argv;
 length = snprintf(countStr, sizeof(countStr), "%d", count);
 write(1, countStr, length);
 return (0);
