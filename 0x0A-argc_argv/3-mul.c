@@ -31,7 +31,7 @@ return (num * sign);
  * @argc: argument count
  * @argv: argument value
  *
- * Return: 0
+ * Return: 0 or 1
  */
 int main(int argc, char *argv[])
 {
@@ -53,7 +53,7 @@ if (argc < 3 || argv[1] == NULL || argv[2] == NULL)
 {
 write(1, &m, 5);
 write(1, &n, 1);
-return (0); 
+return (1);
 }
 num1 = extractnum(argv[1]);
 num2 = extractnum(argv[2]);
