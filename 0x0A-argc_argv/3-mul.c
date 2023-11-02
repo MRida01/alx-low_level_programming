@@ -1,5 +1,6 @@
 #include <unistd.h>
 #include <stdio.h>
+#include <string.h>
 /**
  * extractnum - extracts number from argument
  * @str: string to use
@@ -36,7 +37,7 @@ return (num * sign);
 int main(int argc, char *argv[])
 {
 char n = '\n';
- 
+
 int num1;
 
 int num2;
@@ -45,13 +46,16 @@ int result;
 
 char resultStr[20];
 
+size_t len2;
+
 int len;
 
 char *m = "ERROR";
 
 if (argc < 3 || argv[1] == NULL || argv[2] == NULL)
 {
-write(1, &m, 5);
+len2 = strlen(m);
+write(1, m, len2);
 write(1, &n, 1);
 return (1);
 }
