@@ -28,13 +28,19 @@ i++;
 }
 return (num * sign);
 }
+/**
+ * notnumeric - checks if a string isn't a number
+ * @str: string to use
+ *
+ * Return: 0 or 1
+ */
 int notnumeric(char *str)
 {
 while (*str)
 {
 if (!isdigit(*str))
 {
-return 1;
+return (1);
 }
 str++;
 }
