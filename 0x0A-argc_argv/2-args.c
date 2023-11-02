@@ -19,9 +19,9 @@ char *m = "ERROR";
 
 size_t len;
 
-if (argc > 2)
+if (argc > 0)
 {
-for (i = 1; i < j; i++)
+for (i = 0; i < j; i++)
 {
 len = strlen(argv[i]);
 write(1, argv[i], len);
