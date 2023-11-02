@@ -71,7 +71,7 @@ if (j > 0)
 {
 for (i = 1; i < j; i++)
 {
-if (notnumeric(argv[i] == 1)
+if (notnumeric(argv[i]) == 1)
 {
 len2 = strlen(m);
 write(1, m, len2);
@@ -80,8 +80,10 @@ return (1);
 }
 num1 = extractnum(argv[i]);
 result = num1 + result;
+}
 len = snprintf(resultStr, sizeof(resultStr), "%d", result);
 write(1, resultStr, len);
 write(1, &n, 1);
+}
 return (0);
 }
