@@ -1,7 +1,7 @@
 #include <unistd.h>
 #include <string.h>
 /**
- * main - prints out the program name
+ * main - prints out the following arguments
  * @argc: argument count
  * @argv: argument value
  *
@@ -15,19 +15,16 @@ int j = argc;
 
 char n = '\n';
 
-char m = "ERROR";
+char *m = "ERROR";
 
-char *str = argv[0];
-
-size_t len = strlen(str);
+size_t len;
 
 if (argc > 2)
 {
 for (i = 1; i < j; i++)
 {
-*str = argv[i];
-len = strlen(str);
-write(1, str, len);
+len = strlen(argv[i]);
+write(1, argv[i], len);
 write(1, &n, 1);
 }
 }
