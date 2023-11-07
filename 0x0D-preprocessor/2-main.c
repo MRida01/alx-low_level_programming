@@ -19,7 +19,9 @@ int main()
 {
 char *filename = __FILE__;
 
-for (int i = 0; filename[i] != '\0'; i++)
+int i;
+
+for (i = 0; filename[i] != '\0'; i++)
 {
 _putchar(filename[i]);
 }
