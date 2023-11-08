@@ -1,7 +1,10 @@
 #include <stddef.h>
 #include <stdio.h>
 #include "dog.h"
-
+/**
+ * print_dog - prints a dog variable
+ * @d: dog to print
+ */
 void print_dog(struct dog *d)
 {
 if (d == NULL)
