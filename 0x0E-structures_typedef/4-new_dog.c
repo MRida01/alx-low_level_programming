@@ -1,6 +1,7 @@
 #include "dog.h"
 #include <stdlib.h>
 #include <stddef.h>
+#include <string.h>
 dog_t *new_dog(char *name, float age, char *owner)
 {
 dog_t *newDog = (dog_t *)malloc(sizeof(dog_t));
