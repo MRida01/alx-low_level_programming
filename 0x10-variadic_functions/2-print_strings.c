@@ -21,7 +21,7 @@ char *str = va_arg(args, char *);
 if (str != NULL)
 {
 printf("%s", str);
-{
+}
 else
 {
 printf("(nil)");
