@@ -19,5 +19,5 @@ printf("[%u] %s\n", h->len, h->str);
 h = h->next;
 node_count++;
 }
- return (node_count);
+return (node_count);
 }
