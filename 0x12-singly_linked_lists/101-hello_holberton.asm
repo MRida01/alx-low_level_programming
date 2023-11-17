@@ -12,4 +12,5 @@ main:
 	mov rsi, hello
 	call printf
 	pop rbp
+	mov eax, 0
 	ret
