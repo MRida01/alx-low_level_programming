@@ -1,3 +1,4 @@
+#include <stddef.h>
 #include "main.h"
 /**
  * flip_bits - returns the number of bits need to be flipped to be to a number
@@ -8,7 +9,7 @@
  */
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
-unsigned long int xor_result = n ^ m;
+unsigned long int result = n ^ m;
 
 unsigned int count = 0;
 
