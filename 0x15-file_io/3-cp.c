@@ -5,7 +5,8 @@
 
 #define BUFFER_SIZE 1024
 
-void error_exit(const char *msg, int exit_code) {
+void error_exit(const char *msg, int exit_code)
+{
 dprintf(STDERR_FILENO, "%s\n", msg);
 exit(exit_code);
 }
